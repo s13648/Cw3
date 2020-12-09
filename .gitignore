@@ -337,11 +337,12 @@ ASALocalRun/
 # NVidia Nsight GPU debugger configuration file
 *.nvuser
 
+# Local History for Visual Studio
+.localhistory/    
+
 # MFractors (Xamarin productivity tool) working folder
 .mfractor/
 
-# Local History for Visual Studio
-.localhistory/
 
 # BeatPulse healthcheck temp database
 healthchecksdb

@@ -6,19 +6,10 @@ namespace Cw3.Controllers
     [Route("api/students")]
     public class StudentsController : ControllerBase
     {
-        [HttpGet("{id}")]
-        public IActionResult GeStudents(int id)
+        [HttpGet]
+        public IActionResult GeStudents(string orderBy)
         {
-            if (id == 1)
-            {
-                return Ok("Kowalski");
-            }
-            else if(id == 2)
-            {
-                return Ok("Malewski");
-            }
-
-            return NotFound("Nie znaleziono studenta");
+            return Ok($"Kowalski, Malewski, Andrzejewski sortowanie = {orderBy}");
         }
     }
 }

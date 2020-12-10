@@ -20,5 +20,18 @@ namespace Cw3.Controllers
             student.IndexNumber = $"{new Random().Next(1, 20000)}";
             return Ok(student);
         }
+
+        [HttpPut("{id}")]
+        public IActionResult PutStudent(int id)
+        {
+            return Ok("Ąktualizacja dokończona");
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteStudent(int id)
+        {
+            return Ok("Usuwanie ukończone");
+        }
+
     }
 }
